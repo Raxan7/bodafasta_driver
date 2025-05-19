@@ -62,7 +62,7 @@ dependencies:
   modal_bottom_sheet: ^2.0.0
 
   #network connectivity
-  connectivity_plus: ^2.2.0
+  connectivity_plus: ^5.0.1
 
   # for calling
   flutter_phone_direct_caller: ^2.1.0
