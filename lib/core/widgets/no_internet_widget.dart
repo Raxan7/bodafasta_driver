@@ -4,9 +4,9 @@ class NoInternetWidget extends StatelessWidget {
   final String message;
 
   const NoInternetWidget({
-    Key? key,
+    super.key,
     required this.message,
-  })  : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

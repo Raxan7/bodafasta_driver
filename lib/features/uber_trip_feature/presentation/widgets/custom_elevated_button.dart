@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class CustomElevatedButton extends StatelessWidget {
 
    const CustomElevatedButton({
-    Key? key,
+    super.key,
     required this.text,
     this.onPressed,
-  }) : super(key : key);
+  });
 
   final String text;
   final VoidCallback? onPressed;
@@ -15,14 +15,14 @@ class CustomElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed:  onPressed,
+      style: ButtonStyle(
+        backgroundColor:
+        WidgetStateProperty.all(Colors.black),
+      ),
       //arrived true and completed false -> ongoing
       child:  Text(
         text,
         style: const TextStyle(color: Colors.white),
-      ),
-      style: ButtonStyle(
-        backgroundColor:
-        WidgetStateProperty.all(Colors.black),
       ),
     );
   }

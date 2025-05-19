@@ -6,7 +6,7 @@ import 'package:bodafasta_driver/features/uber_auth_feature/presentation/widgets
 import 'package:bodafasta_driver/features/uber_auth_feature/presentation/widgets/uber_auth_textfield_widget.dart';
 
 class OtpVerificationPage extends StatefulWidget {
-  const OtpVerificationPage({Key? key}) : super(key: key);
+  const OtpVerificationPage({super.key});
 
   @override
   _OtpVerificationPageState createState() => _OtpVerificationPageState();

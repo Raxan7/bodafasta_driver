@@ -79,10 +79,10 @@ class UberAuthDataSourceImpl extends UberAuthDataSource {
   Future<String> uberAddProfileImg(String driverId) async {
     final profileImage =
         await ImagePicker().pickImage(source: ImageSource.gallery);
-    File _profileImage = File(profileImage!.path);
+    File profileImage0 = File(profileImage!.path);
     await firebaseStorage
         .ref('UserProfileImages/$driverId')
-        .putFile(_profileImage);
+        .putFile(profileImage0);
     return await firebaseStorage
         .ref('UserProfileImages/$driverId')
         .getDownloadURL();

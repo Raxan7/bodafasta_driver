@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:bodafasta_driver/features/uber_auth_feature/presentation/widgets/uber_auth_welcome_page_body_widget.dart';
 
 class UberAuthWelcomeScreen extends StatefulWidget {
-  const UberAuthWelcomeScreen({Key? key}) : super(key: key);
+  const UberAuthWelcomeScreen({super.key});
 
   @override
   _UberAuthWelcomeScreen createState() => _UberAuthWelcomeScreen();

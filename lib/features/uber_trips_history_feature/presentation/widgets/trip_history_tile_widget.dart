@@ -6,8 +6,7 @@ import 'package:bodafasta_driver/features/uber_trips_history_feature/domain/enti
 class TripHistoryTile extends StatefulWidget {
   final TripEntity tripHistoryEntity;
 
-  const TripHistoryTile({required this.tripHistoryEntity, Key? key})
-      : super(key: key);
+  const TripHistoryTile({required this.tripHistoryEntity, super.key});
 
   @override
   State<TripHistoryTile> createState() => _TripHistoryTileState();
@@ -34,15 +33,6 @@ class _TripHistoryTileState extends State<TripHistoryTile> {
                       onPressed: () {
                         debugPrint('Received click');
                       },
-                      child: widget.tripHistoryEntity.tripHistoryModel
-                                  .isCompleted ==
-                              true
-                          ? const Text('COMPLETED')
-                          : widget.tripHistoryEntity.tripHistoryModel
-                                      .isArrived ==
-                                  true
-                              ? const Text('ONGOING')
-                              : const Text("WAITING"),
                       style: ButtonStyle(
                         backgroundColor: widget
                                 .tripHistoryEntity.tripHistoryModel.isCompleted!
@@ -53,6 +43,15 @@ class _TripHistoryTileState extends State<TripHistoryTile> {
                                 ? WidgetStateProperty.all(Colors.orange)
                                 : WidgetStateProperty.all(Colors.blue),
                       ),
+                      child: widget.tripHistoryEntity.tripHistoryModel
+                                  .isCompleted ==
+                              true
+                          ? const Text('COMPLETED')
+                          : widget.tripHistoryEntity.tripHistoryModel
+                                      .isArrived ==
+                                  true
+                              ? const Text('ONGOING')
+                              : const Text("WAITING"),
                     ),
                     Row(
                       children: [

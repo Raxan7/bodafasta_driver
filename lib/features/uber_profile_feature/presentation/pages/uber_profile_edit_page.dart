@@ -5,8 +5,7 @@ import 'package:bodafasta_driver/features/uber_profile_feature/presentation/getx
 class UberProfileEditPage extends StatefulWidget {
   final UberProfileController uberProfileController;
 
-  const UberProfileEditPage({required this.uberProfileController, Key? key})
-      : super(key: key);
+  const UberProfileEditPage({required this.uberProfileController, super.key});
 
   @override
   _UberProfileEditPageState createState() => _UberProfileEditPageState();

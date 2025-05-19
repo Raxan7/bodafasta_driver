@@ -14,7 +14,7 @@ import 'package:bodafasta_driver/features/uber_trip_feature/presentation/widgets
 import 'package:bodafasta_driver/features/uber_trip_feature/presentation/widgets/ride_req_bottomsheet_widget.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();

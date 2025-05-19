@@ -12,7 +12,7 @@ import 'package:bodafasta_driver/features/uber_trips_history_feature/presentatio
 import '/injection_container.dart' as di;
 
 class UberProfilePage extends StatefulWidget {
-  const UberProfilePage({Key? key}) : super(key: key);
+  const UberProfilePage({super.key});
 
   @override
   _UberProfilePageState createState() => _UberProfilePageState();

@@ -4,7 +4,7 @@ class ProfileWidget extends StatelessWidget {
   final Function() onPressed;
   final String imgUrl;
 
-   const ProfileWidget({Key? key,  required this.onPressed, required this.imgUrl}) : super(key: key);
+   const ProfileWidget({super.key,  required this.onPressed, required this.imgUrl});
 
 
   @override

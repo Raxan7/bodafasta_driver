@@ -7,7 +7,7 @@ import 'package:bodafasta_driver/features/uber_trips_history_feature/presentatio
 import 'package:bodafasta_driver/features/uber_trips_history_feature/presentation/widgets/trip_history_tile_widget.dart';
 
 class TripHistory extends StatefulWidget {
-  const TripHistory({Key? key}) : super(key: key);
+  const TripHistory({super.key});
 
   @override
   State<TripHistory> createState() => _TripHistoryState();

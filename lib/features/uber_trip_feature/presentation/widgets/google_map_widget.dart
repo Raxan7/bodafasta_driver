@@ -12,7 +12,7 @@ class GoogleMapWidget extends StatefulWidget {
   Map<MarkerId, Marker>? markers;
   Map<PolylineId, Polyline>? polylines;
 
-  GoogleMapWidget(this.markers, this.polylines, {Key? key}) : super(key: key);
+  GoogleMapWidget(this.markers, this.polylines, {super.key});
 
   @override
   State<GoogleMapWidget> createState() => _GoogleMapWidgetState();
@@ -23,7 +23,7 @@ class _GoogleMapWidgetState extends State<GoogleMapWidget> {
 
   @override
   Widget build(BuildContext context) {
-    const CameraPosition _initialLocation = CameraPosition(
+    const CameraPosition initialLocation = CameraPosition(
       target: LatLng(23.35125, 72.956),
       zoom: 17.0,
     );
@@ -42,7 +42,7 @@ class _GoogleMapWidgetState extends State<GoogleMapWidget> {
           zoomControlsEnabled: false,
           markers: Set<Marker>.of(widget.markers!.values),
           polylines: Set<Polyline>.of(widget.polylines!.values),
-          initialCameraPosition: _initialLocation,
+          initialCameraPosition: initialLocation,
         ),
         Positioned(
           child: Padding(

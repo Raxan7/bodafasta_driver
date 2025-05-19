@@ -16,7 +16,7 @@ import 'package:bodafasta_driver/features/uber_trip_feature/presentation/pages/h
 import '/injection_container.dart' as di;
 
 class UberSplashScreen extends StatefulWidget {
-  const UberSplashScreen({Key? key}) : super(key: key);
+  const UberSplashScreen({super.key});
 
   @override
   _UberSplashScreenState createState() => _UberSplashScreenState();

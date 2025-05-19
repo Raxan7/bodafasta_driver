@@ -4,7 +4,7 @@ class IsOnlineWidget extends StatelessWidget {
   final String online;
   final Function() onPressed;
 
-    const IsOnlineWidget({Key? key, required this.online, required this.onPressed}) : super(key: key);
+    const IsOnlineWidget({super.key, required this.online, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {

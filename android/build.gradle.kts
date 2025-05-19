@@ -45,6 +45,12 @@ subprojects {
                     }
                 }
             }
+            
+            // Set Java compatibility to 11 for all Android libraries
+            compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_11
+                targetCompatibility = JavaVersion.VERSION_11
+            }
         }
     }
 }

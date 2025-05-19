@@ -7,7 +7,7 @@ import 'package:bodafasta_driver/features/uber_auth_feature/presentation/getx/au
 import 'package:bodafasta_driver/features/uber_auth_feature/presentation/widgets/uber_auth_register_page_body_widget.dart';
 
 class UberAuthRegistrationPage extends StatefulWidget {
-  const UberAuthRegistrationPage({Key? key}) : super(key: key);
+  const UberAuthRegistrationPage({super.key});
 
   @override
   _UberAuthRegistrationPageState createState() =>

@@ -5,7 +5,7 @@ import 'package:bodafasta_driver/features/uber_auth_feature/presentation/getx/au
 import 'package:bodafasta_driver/features/uber_auth_feature/presentation/widgets/uber_auth_phone_verification_body_widget.dart';
 
 class PhoneVerificationPage extends StatefulWidget {
-  const PhoneVerificationPage({Key? key}) : super(key: key);
+  const PhoneVerificationPage({super.key});
 
   @override
   _PhoneVerificationPageState createState() => _PhoneVerificationPageState();
@@ -88,7 +88,7 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
                           if (_phoneAuthController.text.isNotEmpty &&
                               _phoneAuthController.text.length == 10) {
                             _uberAuthController.verifyPhoneNumber(
-                                "+91" + _phoneAuthController.text);
+                                "+91${_phoneAuthController.text}");
                           }
                         },
                         style: ButtonStyle(
