@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.bodafasta_driver"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"  // Use the highest NDK version for compatibility
 
     buildFeatures {
         buildConfig = true
