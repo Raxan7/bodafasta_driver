@@ -14,6 +14,15 @@ subprojects {
 }
 subprojects {
     project.evaluationDependsOn(":app")
+    
+    // Enable buildConfig for all projects to fix Firebase plugin issues
+    plugins.withId("com.android.library") {
+        configure<com.android.build.gradle.LibraryExtension> {
+            buildFeatures {
+                buildConfig = true
+            }
+        }
+    }
 }
 
 tasks.register<Delete>("clean") {
